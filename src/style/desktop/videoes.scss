@@ -1,0 +1,46 @@
+$primary_one: #0B5E3F;
+$primary_two: #55DD4E;
+$primary_accent: #04130c;
+$primary_accentTwo: #0a3424;
+$color_dark: #323232;
+$primary_four: #f7ad13;
+$color_wine: #5E0B37;
+
+.videoGallery{
+
+  .videoGalleryBanner {
+    width: 100%;
+    height: 400px;
+    background-color: $primary_accent;
+    color: $primary_four;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    .title{
+      color: $primary_four;
+    }
+  }
+  .videosContents{
+    width: auto;
+    height: auto;
+    display: flex;
+align-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    .vidBox{
+      margin: 3%;
+      width: 350px;
+      padding: 5px;
+      height: 280px;
+      display: flex;
+      justify-content: space-evenly;
+      iframe{
+        max-height: 280px;
+      }
+    }
+  }
+}

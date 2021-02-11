@@ -1,0 +1,8 @@
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+RewriteEngine On
+RewriteCond %{QUERY_STRING} ^(. )&(. )$
+RewriteRule ^(.*)$ /$1?%1&%2 [L,R]

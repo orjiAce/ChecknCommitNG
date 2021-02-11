@@ -1,0 +1,424 @@
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$primary_wine: #c63232;
+$primary_two: #55DD4E;
+$primary_accent: #051A12;
+$primary_accentTwo: #0a3424;
+
+.cancel-profile {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+
+  .banner {
+    width: 100%;
+    height: 270px;
+    background-color: $primary_accentTwo;
+    .title{
+      color: $primary_four;
+      width: auto;
+      font-weight: 700;
+      text-align: center;
+      font-size: 5rem;
+    }
+  }
+.content{
+
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  .header{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    .txt{
+      font-size: 1.9rem;
+      font-weight: 700;
+      padding: 10px;
+    }
+    .img{
+      margin: 10px;
+      width: 85px;
+      height: 85px;
+      border-radius: 100%;
+      background-color: #cccccc;
+      img{
+        width: 85px;
+        height: 85px;
+        border-radius: 100%;
+      }
+    }
+
+  }
+  .imgSadFace{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10%;
+
+    img{
+      max-height: 100px;
+      object-fit: cover;
+    }
+  }
+  .message{
+    width:auto;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    .left{
+      width: 40%;
+      height: auto;
+box-sizing: border-box;
+      font-size: 1.2rem;
+      section{
+padding: 5px;
+        margin: 8px;
+        box-sizing: border-box;
+        font-weight: 500;
+      }
+    }
+    .right{
+      font-size: 1.2rem;
+      width: 40%;
+      height: auto;
+      box-sizing: border-box;
+      ul{
+        width: 100%;
+        height: auto;
+        li{
+          margin: 8px;
+          list-style-type: circle;
+          font-weight: 500;
+        }
+      }
+      .cancelBtn{
+        font-weight: 500;
+        button{
+          background-color: #55dd4e;
+          color: white;
+          width: 90px;
+          border: none;
+          height: 30px;
+          border-radius: 17px;
+          cursor: pointer;
+        }
+      }
+
+
+    }
+  }
+
+
+  }
+}
+
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+
+
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .cancel-profile {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+
+    .banner {
+      width: auto;
+      height: 200px;
+      background-color: $primary_accentTwo;
+      .title{
+        color: $primary_four;
+        width: auto;
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    .content{
+
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      .header{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        flex-direction: column;
+        .txt{
+          text-align: center;
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding: 5px;
+        }
+        .img{
+          margin: 10px;
+          width: 55px;
+          height: 55px;
+          border-radius: 100%;
+          background-color: #cccccc;
+          img{
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+          }
+        }
+
+      }
+      .imgSadFace{
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-left: 10%;
+
+        img{
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+      .message{
+        width:auto;
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .left{
+          width: 95%;
+          height: auto;
+          box-sizing: border-box;
+          font-size: 1.2rem;
+          margin: 8px;
+          section{
+            padding: 5px;
+            margin: 12px;
+            box-sizing: border-box;
+            font-weight: 500;
+          }
+        }
+        .right{
+          font-size: 1.2rem;
+          width: 90%;
+          height: auto;
+          box-sizing: border-box;
+          margin: 8px;
+          ul{
+            width: 100%;
+            height: auto;
+            li{
+              margin: 8px;
+              list-style-type: circle;
+              font-weight: 500;
+            }
+          }
+          .cancelBtn{
+            font-weight: 500;
+            button{
+              background-color: #55dd4e;
+              color: white;
+              width: 90px;
+              border: none;
+              height: 30px;
+              border-radius: 17px;
+              cursor: pointer;
+            }
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+//hambugger menu
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cancel-profile {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+
+    .banner {
+      width: auto;
+      height: 200px;
+      background-color: $primary_accentTwo;
+      .title{
+        color: $primary_four;
+        width: auto;
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    .content{
+
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      .header{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        flex-direction: column;
+        .txt{
+          text-align: center;
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding: 5px;
+        }
+        .img{
+          margin: 10px;
+          width: 55px;
+          height: 55px;
+          border-radius: 100%;
+          background-color: #cccccc;
+          img{
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+          }
+        }
+
+      }
+      .imgSadFace{
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-left: 10%;
+
+        img{
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+      .message{
+        width:auto;
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+flex-direction: column;
+        .left{
+          width: 95%;
+          height: auto;
+          box-sizing: border-box;
+          font-size: 1.2rem;
+          margin: 8px;
+          section{
+            padding: 5px;
+            margin: 12px;
+            box-sizing: border-box;
+            font-weight: 500;
+          }
+        }
+        .right{
+          font-size: 1.2rem;
+          width: 90%;
+          height: auto;
+          box-sizing: border-box;
+          margin: 8px;
+          ul{
+            width: 100%;
+            height: auto;
+            li{
+              margin: 8px;
+              list-style-type: circle;
+              font-weight: 500;
+            }
+          }
+          .cancelBtn{
+            font-weight: 500;
+            button{
+              background-color: #55dd4e;
+              color: white;
+              width: 90px;
+              border: none;
+              height: 30px;
+              border-radius: 17px;
+              cursor: pointer;
+            }
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+
+}

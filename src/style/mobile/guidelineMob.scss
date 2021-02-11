@@ -1,0 +1,215 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$primary_wine: #c63232;
+$primary_two: #55DD4E;
+$primary_accent: #051A12;
+
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+  .guidelineBanner{
+    height: 680px;
+    width: 100%;
+    .txt{
+      animation: fadeIn 3s ease;
+      float: right;
+      width: 60%;
+      text-align: center;
+      height: auto;
+      right: 1%;
+      position: absolute;
+      color:  $primary_four;
+      font-size: 2.3rem;
+      font-weight: 800;
+      margin-top: 20%;
+    }
+    svg{
+      width: 100%;
+      .line{
+
+      }
+      .man{
+        max-height: 550px;
+        animation: shake 0.9s ease;
+      }
+    }
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+  .guideline{
+    width: 100%;
+    height: auto;
+  }
+  .guidelineBanner{
+    height: 680px;
+    width: 100%;
+    .txt{
+      animation: fadeIn 3s ease;
+      float: left;
+      width: 90%;
+      text-align: left;
+      height: auto;
+     left: 1%;
+      position: absolute;
+      color:  $primary_four;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-top: 50%;
+    }
+    svg{
+      width: 100%;
+      .line{
+
+      }
+      .man{
+        max-height: 550px;
+        animation: shake 0.9s ease;
+      }
+    }
+  }
+
+  .guidelineCont{
+    width: 100%;
+    background: #F5F5F5;
+    height: auto;
+    .firstText{
+      padding: 10px;
+      height: auto;
+      width: auto;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .guidelineContTwo{
+      height: auto;
+      width: auto;
+      display: flex;
+      padding: 15px;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-flow: wrap;
+
+      .leftCont{
+        width: 100%;
+        height:auto;
+
+
+        .box{
+          border-radius: 20px;
+          margin-top: 5%;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          background: #ffffff;
+          padding: 8px;
+          height:auto;
+          width: 90%;
+          .contentTitle{
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: $primary_one;
+            text-align: center;
+          }
+          .content{
+            font-size: 0.9rem;
+            padding: 15px;
+            width: auto;
+            height: auto;
+            font-weight: 500;
+            ul{
+              margin: 2%;
+            }
+          }
+
+        }
+      }
+      .rightCont{
+        display: none;
+
+      }
+    }
+
+  }
+
+}
+
+@keyframes shake {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

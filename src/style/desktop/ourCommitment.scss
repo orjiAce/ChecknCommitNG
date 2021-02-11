@@ -1,0 +1,267 @@
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$primary_wine: #c63232;
+$primary_two: #55DD4E;
+
+
+.ourCommitment{
+width: 100%;
+  height: auto;
+background: #dadada;
+
+}
+
+svg{
+  width: 100%;
+  height: 658px;
+}
+.stars {
+  animation: fadeIn 2s ease;
+transition: 0.8s ease;
+
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.banner{
+
+
+
+  .txt{
+    text-transform: capitalize;
+position: absolute;
+    float: right;
+    right: 15px;
+    font-weight: 900;
+    font-size: 5rem;
+    color: $primary_four;
+    top: 20%;
+
+  }
+}
+
+.statement {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .commitment {
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 1%;
+    box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    h2 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    div {
+      padding: 20px;
+    }
+  }
+}
+
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+  .ourCommitment{
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+
+  }
+
+  svg{
+    width: 100%;
+    height: 458px;
+
+  }
+  .stars {
+    animation: fadeIn 2s ease;
+    transition: 0.8s ease;
+
+  }
+
+  .manChamp{
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  .banner{
+
+
+    .txt{
+      text-transform: capitalize;
+      position: absolute;
+      right: 15px;
+      font-weight: 900;
+      font-size: 2rem;
+      color: $primary_four;
+      top: 40%;
+      width: auto;
+      text-align: center;
+
+    }
+  }
+
+  .statement {
+    width: 100%;
+    height: auto;
+
+    .commitment {
+      width: 90%;
+      padding: 15px;
+      h2 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      div {
+        padding: 5px;
+      }
+    }
+  }
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .ourCommitment{
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+
+  }
+
+  svg{
+    width: 100%;
+    height: 458px;
+
+  }
+  .stars {
+    animation: fadeIn 2s ease;
+    transition: 0.8s ease;
+
+  }
+
+  .manChamp{
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  .banner{
+
+
+    .txt{
+      text-transform: capitalize;
+      position: absolute;
+      right: 15px;
+      font-weight: 900;
+      font-size: 2rem;
+      color: $primary_four;
+      top: 40%;
+      width: auto;
+      text-align: center;
+
+    }
+  }
+
+  .statement {
+    width: 100%;
+    height: auto;
+
+    .commitment {
+      width: 90%;
+      padding: 15px;
+      h2 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      div {
+        padding: 5px;
+      }
+    }
+  }
+
+
+}

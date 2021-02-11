@@ -1,0 +1,739 @@
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$primary_wine: #c63232;
+$primary_two : #55DD4E;
+  .contSVG {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    border-bottom: 0;
+background: #051A12;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    .profileParams{
+      display: flex;
+      justify-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      animation: fadeIn 1s ease-in-out;
+   .notifications{
+    animation: fadeIn 0.8s ease-in;
+     float: left;
+     width: 400px;
+     height: 100%;
+     display: flex;
+
+
+     .noti {
+       margin: 7% 5% 3%;
+       width: 280px;
+       height: 270px;
+       border-radius: 5px 40px 50px 40px;
+       background: #ffffff;
+       box-shadow: 0 9px 10px rgba(0, 0, 0, 0.6);
+
+       .notiContent {
+         font-weight: 500;
+         color: $color_dark;
+         padding: 10px;
+       }
+       .notiIcon{
+         position: absolute;
+         width: 40px;
+         height: 40px;
+         background: #04AA41;
+         display: flex;
+         border-radius: 100%;
+         align-items: center;
+         justify-content: center;
+         align-content: center;
+         top: 10px;
+         left: 7px;
+         .icon{
+           font-size: 1.6rem;
+           color: $primary_four;
+         }
+       }
+     }
+
+   }
+
+      .details{
+        width: 850px;
+        height: 100%;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .detailsTop{
+width: 100%;
+          height:200px ;
+        display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          .detailsLeft{
+            width:290px;
+            height: 100%;
+
+          }
+          .userImage{
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            object-fit: cover;
+
+            img{
+              width: 190px;
+              height: 190px;
+              border-radius: 100%;
+              object-fit: cover;
+            }
+
+          }
+          .editPic{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: none;
+            background: $color_dark;
+            color: white;
+            position: absolute;
+            top: 35%;
+            cursor: pointer;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+          }
+
+          .detailsRight, .detailsLeft{
+            width: 290px;
+            height: 100%;
+            display: flex;
+            justify-content: left;
+            align-content: start;
+            align-items: center;
+            flex-direction: column;
+div{
+  color: white;
+  text-align: center;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-left: 15%;
+  margin-top: 5%;
+font-weight: 500;
+}
+          }
+        }
+
+        .detailsBottom{
+          width: 100%;
+          height:300px ;
+          flex-direction: column;
+          display: flex;
+
+          align-items: center;
+          justify-items: center;
+          align-content: center;
+.userName{
+  width:100%;
+  height:50px;
+  text-align: center;
+  small{
+    color: #a1a1a1;
+  }
+  span{
+    text-align: center;
+  font-weight: 600;
+    color: #ffffff;
+    font-size: 2rem;
+}
+}
+
+          .numbers{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            width: 60%;
+            height: 100px;
+            .reviews, .flagged{
+              font-weight: 600;
+              text-align: center;
+              height: 35px;
+              width: 150px;
+              background: #04AA41;
+              border-radius: 25px;
+              line-height: 35px;
+              color: white;
+            }
+
+          }
+          .editBtnMob{
+            display: none;
+          }
+          .editBtn{
+            position: absolute;
+            background: $color_dark;
+            border: none;
+            border-radius: 30px;
+            height: 40px;
+            width: 115px;
+            outline: none;
+            color: white;
+            margin-top: 5%;
+            padding: 5px;
+            font-weight: 600;
+            z-index: 4;
+            cursor: pointer;
+            transition: 0.6s ease-in-out;
+            &:hover{
+              box-shadow: 0 5px 13px 0 rgba(0,0,0,0.3);
+            }
+          }
+        }
+
+      }
+      .writeReview{
+        height: 100%;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        .logoutBtn{
+          border: none;
+          margin-top: 3%;
+          background-color: #111111;
+          color: #ffffff;
+          border-radius: 8px;
+          padding: 8px;
+          cursor: pointer;
+        }
+    .writeBtn{
+      width: auto;
+      height:auto;
+      top: 0;
+      padding: 10px;
+
+      button{
+        box-shadow: 0 9px 10px rgba(0,0,0,0.6);
+        border: none;
+        width: 150px;
+        background: #04AA41;
+        height: 35px;
+        border-radius:15px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        outline: none;
+        cursor: pointer;
+        transition: 0.8s ease;
+        &:hover{
+          box-shadow: none;
+          background: #026a28;
+        }
+
+      }
+
+
+    }
+        .words{
+        transition: 0.8s ease-in-out;
+          margin-top: 8px;
+          width: 300px;
+          height: 170px;
+          padding: 10px;
+          border-radius: 40px 0 40px 40px;
+          background: rgba(0, 0, 0, 0.39);
+          box-shadow: 0 9px 10px rgba(0,0,0,0.6);
+          color: white;
+          font-weight: 600;
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          flex-direction: column;
+          animation: fadeIn 2s ease-in-out;
+          transform-origin: top;
+
+          div{
+            top:1%;
+            height: auto;
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+
+
+.profileSkeleton {
+  width: 100%;
+  height: auto;
+  transition: 0.8s ease;
+  .mobile{
+    display: none;
+  }
+  .desktop{
+    display: block;
+
+    .contSVG {
+      animation: fadeIn 1s ease-in-out;
+      margin: 0 auto;
+      width: 100%;
+      height: 500px;
+      border-bottom: 0;
+      background: #d6d6d6;
+      position: relative;
+      overflow: hidden;
+      .profileParams{
+        display: flex;
+        justify-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        .notifications{
+          float: left;
+          width: 400px;
+          height: 100%;
+          display: flex;
+
+          .noti {
+            margin: 7% 5% 3%;
+            width: 280px;
+            height: 270px;
+            border-radius: 5px 40px 50px 40px;
+            background: #bebebe;
+            box-shadow: none;
+            animation: fadeIn 0.8s ease-in-out alternate infinite;
+
+            .notiIcon{
+
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              background: #BEBEBE;
+              display: flex;
+              border-radius: 100%;
+              align-items: center;
+              justify-content: center;
+              align-content: center;
+              top: 10px;
+              left: 7px;
+              .icon{
+                font-size: 1.6rem;
+                color: #BEBEBE;
+              }
+            }
+          }
+
+        }
+
+        .details{
+          width: 850px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+
+          .detailsTop{
+            width: 100%;
+            height:200px ;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            .detailsLeft{
+              width:290px;
+              height: 100%;
+
+            }
+            .userImage{
+              width: 190px;
+              height: 190px;
+              border-radius: 100%;
+              object-fit: cover;
+              animation: fadeIn 0.8s ease-in-out alternate infinite;
+          background-color: #BEBEBE;
+
+            }
+
+
+            .detailsRight, .detailsLeft{
+              width: 290px;
+              height: 100%;
+              display: flex;
+              justify-content: left;
+              align-content: start;
+              align-items: center;
+              flex-direction: column;
+              div{
+                color: white;
+                text-align: center;
+                float: left;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                margin-left: 15%;
+                margin-top: 5%;
+                font-weight: 500;
+              }
+            }
+          }
+
+          .detailsBottom{
+            width: 100%;
+            height:300px ;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            .userName{
+              width:100%;
+              height:50px;
+              text-align: center;
+              small{
+                color: #a1a1a1;
+              }
+              span{
+                text-align: center;
+                font-weight: 600;
+                color: #ffffff;
+                font-size: 2rem;
+              }
+            }
+
+            .numbers{
+              display: flex;
+              justify-content: space-between;
+              padding: 5px;
+              width: 60%;
+              height: 100px;
+              .reviews, .flagged{
+                font-weight: 600;
+                text-align: center;
+                height: 35px;
+                width: 150px;
+                background: #BEBEBE;
+                border-radius: 25px;
+                line-height: 35px;
+                animation: fadeIn 0.8s ease-in-out alternate infinite;
+              }
+
+            }
+
+
+          }
+
+        }
+        .writeReview{
+          height: 100%;
+          width: 450px;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+
+
+          .words{
+            transition: 0.8s ease-in-out;
+            margin-top: 8px;
+            width: 300px;
+            height: 170px;
+            padding: 10px;
+            border-radius: 40px 0 40px 40px;
+            background: #BEBEBE;
+            animation: fadeIn 0.8s ease-in-out alternate infinite;
+            box-shadow:none;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            transform-origin: top;
+
+            div{
+              top:1%;
+              height: auto;
+              width: 100%;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+  .contSVG:after {
+    content: "";
+    position: absolute;
+    height: 250px;
+    left: -12%;
+    right: -12%;
+    border-radius: 50%;
+    bottom: -52px;
+    background: #ffffff;
+    z-index: 2;
+  }
+
+  .contSVG:before {
+    content: "";
+    position: absolute;
+    height: 52px;
+    left: -10%;
+    right: -10%;
+    border-radius: 50%;
+    bottom: -62px;
+    background: #ffffff;
+    z-index: 1;
+  }
+
+  .profileCont{
+flex-direction: column;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    .contents{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-evenly;
+      .reviews{
+        padding: 15px;
+
+        width: 55%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+      }
+      .businesses{
+        padding: 15px;
+        width: 35%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+      }
+    }
+
+    .headings{
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-items: flex-start;
+      justify-content: space-evenly;
+      align-content: space-between;
+      .text{
+text-align: justify-all;
+        width: 40%;
+        height: auto;padding: 15px;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+
+
+    .myCard {
+      margin: 1.5%;
+      width: 420px;
+      height: 230px;
+      border-radius: 27px;
+      box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+      transition: 0.6s ease-in-out;
+      transform-origin: bottom;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer;
+background: white;
+      &:hover {
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+        transform: translateY(-20px);
+      }
+
+      .topLayer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+        max-height:40px;
+        padding: 8px;
+
+        .userImg {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          // background-color: #5E0B37;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: relative;
+          }
+        }
+
+        .sideBox {
+          width: 85%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+
+          .userName {
+            line-height: 10px;
+            width: 100%;
+            height: 15px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: space-between;
+            display: flex;
+
+            .name {
+              font-weight: 700;
+              font-size: .8rem;
+
+              span {
+                font-weight: 400;
+                color: #323232;
+              }
+
+              a {
+                text-decoration: none;
+                color: $color_dark;
+              }
+            }
+
+            .time {
+              color: #969696;
+              margin-right: 10%;
+              font-weight: 500;
+              font-size: .6rem;
+            }
+
+
+          }
+
+          .rating {
+            color: $primary_four;
+            width: 100%;
+            height: 20px;
+
+          }
+        }
+      }
+
+      .middleLayer {
+        font-weight: 500;
+        font-size: .8rem;
+        text-wrap: normal;
+        word-wrap: normal;
+        width: auto;
+        padding: 10px;
+        height: 270px;
+
+        .reviewTitle{
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        .body{
+
+        }
+      }
+
+      .bottomLayer {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+          border-radius: 10px;
+          object-fit: cover;
+          background-color: #323232;
+          width: 70px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+
+.editDialog{
+
+  border-radius: 10px;
+}
+  .saveBtn{
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    background: $primary_one;
+    color: #ffffff;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    outline: none;
+  }
+
+.inputWrap {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
+
+  label {
+    font-size: .9rem;
+    font-weight: 600;
+    height: 55px;
+    color: $color_dark;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    width: 340px;
+    height: 20px;
+    box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 25px;
+  }
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

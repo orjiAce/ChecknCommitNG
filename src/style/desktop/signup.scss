@@ -1,0 +1,489 @@
+
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$primary_wine: #c63232;
+$primary_two: #55DD4E;
+
+
+.notice{
+  color: #F6AE5B;
+  width: auto;
+  height: auto;
+flex-wrap: wrap;
+  padding: 8px;
+}
+.signUp {
+  margin-top: 4%;
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  align-content: space-evenly;
+
+
+.loginSvg{
+  animation: fadeIn 0.8s ease;
+  margin-left: 2%;
+  width: 700px;
+  height:auto;
+  background: #ffffff;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  margin-bottom: 4%;
+  .msg{
+    height: 180px;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: "Poppins extrabold", sans-serif;
+    text-align: center;
+    color: #232323;
+    font-size: 3rem;
+  }
+  .bottomMsg{
+    margin-top: 5%;
+    padding: 10px;
+    height: 100px;
+    width: 70%;
+  }
+
+
+}
+.formWrap{
+  //margin-left: 2%;
+  width: 670px;
+  height:auto;
+  top: 0;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 4%;
+  .formTitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color_dark;
+    .icon{
+      color: $primary_one;
+    }
+  }
+  .msgReq{
+    font-size: .9rem;
+  }
+
+
+}
+
+.signUpForm {
+  animation: 0.8s fadein ease 1s;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .inputWrap {
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    margin: 2%;
+
+    label {
+      font-size: .9rem;
+      font-weight: 600;
+      height: 55px;
+      color: $color_dark;
+    }
+
+    .inputCont {
+      outline: none;
+      border: none;
+      width: 340px;
+      height: 20px;
+      box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      border-radius: 25px;
+      display: flex;
+      align-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      justify-items: center;
+      input{
+        outline: none;
+        border: none;
+        width: 90%;
+        height: 20px;
+        box-shadow: none;
+        border-radius: 0;
+       background: none;
+        &:focus, &:active{
+          background: none;
+          outline: none;
+        }
+      }
+    }
+
+
+  }
+
+  .forgotPass {
+    width: 50%;
+    text-align: left;
+    float: left;
+    height: 20px;
+    font-weight: 600;
+    font-size: .8rem;
+ a{
+
+ }
+  }
+
+  .bottomForm {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    height: 55px;
+
+    button {
+      cursor: pointer;
+      font-weight: 600;
+      border: none;
+      background: $primary_one;
+      color: #ffffff;
+      border-radius: 20px;
+      height: 40px;
+      width: 100px;
+      outline: none;
+    }
+
+    .link {
+      font-weight: 500;
+      font-size: .8rem;
+      color: $color_dark;
+    }
+
+  }
+}
+}
+
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+  transition: 0.8s ease-in-out;
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border:1px solid $color_dark;
+    transition: 0.5s ease-in-out;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: #dddddd;
+  }
+
+  // Box focus
+  &:focus + label:before {
+   // box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: $primary_one;
+    border: none;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .mobMenuItems{
+    display: none;
+  }
+  //CSS
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+//hambugger menu
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .signUp {
+    margin-top: 4%;
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    align-content: space-evenly;
+
+
+    .loginSvg{
+      display: none;
+
+    }
+    .formWrap{
+      //margin-left: 2%;
+      width:auto;
+      height:auto;
+      top: 0;
+      display: flex;
+      align-content: space-between;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      border-radius: 25px;
+      padding: 15px;
+      margin-bottom: 4%;
+      .formTitle{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        color: $color_dark;
+        .icon{
+          color: $primary_one;
+        }
+      }
+      .msgReq{
+        font-size: .9rem;
+      }
+
+
+    }
+
+    .signUpForm {
+      animation: 0.8s fadein ease 1s;
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .inputWrap {
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-direction: column;
+
+        label {
+          font-size: .9rem;
+          font-weight: 600;
+          height: 55px;
+          color: $color_dark;
+        }
+
+        .inputCont {
+          outline: none;
+          border: none;
+          width: 290px;
+          height: 20px;
+          box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.2);
+          padding: 15px;
+          border-radius: 25px;
+          display: flex;
+          align-content: space-evenly;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+          justify-items: center;
+          input{
+            outline: none;
+            border: none;
+            width: 90%;
+            height: 20px;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+            &:focus, &:active{
+              background: none;
+              outline: none;
+            }
+          }
+        }
+
+
+      }
+
+      .forgotPass {
+        width: 100%;
+        text-align: left;
+        float: left;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        font-weight: 600;
+        font-size: .8rem;
+    a{
+
+    }
+      }
+
+      .bottomForm {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        button {
+          cursor: pointer;
+          font-weight: 600;
+          border: none;
+          background: $primary_one;
+          color: #ffffff;
+          border-radius: 20px;
+          height: 40px;
+          width: 100px;
+          outline: none;
+        }
+
+        .link {
+          margin-top: 2%;
+          min-height: 70px;
+          font-weight: 500;
+          font-size: .8rem;
+          color: $color_dark;
+        }
+
+      }
+    }
+  }
+
+}
+
+
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

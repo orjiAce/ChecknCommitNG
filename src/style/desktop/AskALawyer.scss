@@ -1,0 +1,830 @@
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$primary_wine: #c63232;
+$primary_two: #55DD4E;
+$primary_accent: #051A12;
+
+.askALawyer{
+  width: 100%;
+    height: auto;
+background-color: #dddddd;
+  padding-bottom: 20px;
+}
+.askALawyerBanner{
+  width: 100%;
+  height: 300px;
+  background-color: $primary_accent;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: $primary_four;
+  font-weight: 700;
+  font-size: 5rem;
+  animation: fadeIn 1s ease-in-out;
+  .txt{
+    animation: slideIn 2s ease-in-out;
+}
+
+}
+.askALawyerWrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  .text{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: 700;
+}
+  .smalltxt{
+    width: auto;
+    text-align: center;
+}
+  .askALawyerIllustration{
+    background-color: white;
+    margin-top: 4%;
+    width: 370px;
+    max-height: 400px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .imageWrap{
+      overflow: hidden;
+      animation: slideThru 1s ease-in-out;
+      width: 250px;
+      height: 280px;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      img{
+        max-width: 250px;
+      }
+    }
+  }
+
+  .askALawyerForm{
+    background-color: white;
+    margin-top: 4%;
+    width: 670px;
+    min-height: 550px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    form{
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      .inputWrap {
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-direction: column;
+
+
+        .errors {
+          margin-top: 3%;
+          color: #5E0B37;
+          font-weight: 500;
+          font-size: .9rem;
+          height: 30px;
+          padding: 10px;
+          width: 100%;
+
+          transition: 0.9s ease-in;
+      }
+
+        label {
+          font-size: .9rem;
+          font-weight: 600;
+          height: 55px;
+          color: $color_dark;
+      }
+        .inputCont {
+
+          width: 340px;
+          height: 20px;
+          padding: 15px;
+          border-radius: 25px;
+          display: flex;
+          align-content: space-evenly;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+          justify-items: center;
+          border: 1px solid #cccccc;
+          input, select {
+            outline: none;
+            border: none;
+            width: 90%;
+            height: 20px;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+  transition: 0.8s ease-in-out;
+    &:focus, &:active {
+      background: none;
+      outline: none;
+  }
+  }
+  }
+
+    .textCont {
+      border: 1px solid #cccccc;
+      width: 340px;
+      height: 100px;
+      padding: 15px;
+      border-radius: 25px;
+      display: flex;
+      align-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      justify-items: center;
+
+
+      textarea {
+        background-color: #5E0B37;
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 90px;
+        box-shadow: none;
+        border-radius: 0;
+        background: none;
+
+        &:focus, &:active {
+          background: none;
+          outline: none;
+      }
+    }
+  }
+
+
+  }
+      .notice{
+        text-align: center;
+        font-weight: 600;
+        color: $color_dark;
+        margin-top: 10%;
+        width: 100%;
+        height: 80px;
+
+      }
+    .bottomForm {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 50%;
+      height: auto;
+      bottom: 0;
+      margin-top: 10%;
+
+      button {
+        cursor: pointer;
+        border: none;
+        background: $primary_one;
+        color: #ffffff;
+        border-radius: 20px;
+        height: 35px;
+        width: auto;
+        outline: none;
+        font-weight: 900;
+        padding: 10px;
+    }
+  }
+  }
+  }
+
+}
+
+
+
+
+
+
+
+//pay ask a lawyer
+.payForm{
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+.emailSent{
+  width:auto;
+  height: auto;
+  padding: 20px;
+  font-size: 2rem;
+  color: $primary_accent;
+}
+
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+//CSS
+//mob offs
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+//CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+//CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+//CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+//CSS
+  .askALawyer{
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+    padding-bottom: 20px;
+
+    .askALawyerBanner{
+      width: 100%;
+      height: 250px;
+      background: $primary_accent;
+      align-content: center;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      color: $primary_four;
+      font-weight: 700;
+      font-size: 2rem;
+      animation: fadeIn 1s ease-in-out;
+      .txt{
+        animation: slideIn 2s ease-in-out;
+      }
+
+    }
+
+    .askALawyerWrap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+
+      .text {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 2%;
+        font-weight: 700;
+      }
+
+      .smalltxt {
+        width: auto;
+      }
+      .askALawyerIllustration{
+        background-color: white;
+        margin-top: 4%;
+        width: 80%;
+        max-height: 400px;
+        box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+        border-radius: 30px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .imageWrap{
+          overflow: hidden;
+          animation: slideThru 1s ease-in-out;
+          width: 250px;
+          height: 280px;
+          object-fit: cover;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          img{
+            max-width: 250px;
+          }
+        }
+      }
+      .askALawyerForm {
+        margin-top: 4%;
+        width: 100%;
+        height: 500px;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          width: 95%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+
+          .inputWrap {
+            width: auto;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-direction: column;
+
+
+            .errors {
+              margin-top: 3%;
+              color: #5E0B37;
+              font-weight: 500;
+              font-size: .9rem;
+              height: 30px;
+              padding: 10px;
+              width: 100%;
+
+              transition: 0.9s ease-in;
+            }
+
+            label {
+              font-size: .9rem;
+              font-weight: 600;
+              height: 55px;
+              color: $color_dark;
+            }
+
+            .inputCont {
+
+              width: 100%;
+              height: 20px;
+              padding: 15px;
+              border-radius: 25px;
+              display: flex;
+              align-content: space-evenly;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-evenly;
+              justify-items: center;
+              border: 1px solid #cccccc;
+
+              input, select {
+                outline: none;
+                border: none;
+                width: 90%;
+                height: 20px;
+                box-shadow: none;
+                border-radius: 0;
+                background: none;
+                transition: 0.8s ease-in-out;
+
+                &:focus, &:active {
+                  background: none;
+                  outline: none;
+                }
+              }
+            }
+
+            .textCont {
+              border: 1px solid #cccccc;
+              width: 100%;
+              height: 100px;
+              padding: 15px;
+              border-radius: 25px;
+              display: flex;
+              align-content: space-between;
+              align-items: center;
+              flex-direction: column;
+              justify-content: space-between;
+              justify-items: center;
+
+
+              textarea {
+                background-color: #5E0B37;
+                outline: none;
+                border: none;
+                width: 100%;
+                height: 90px;
+                box-shadow: none;
+                border-radius: 0;
+                background: none;
+
+                &:focus, &:active {
+                  background: none;
+                  outline: none;
+                }
+              }
+            }
+
+
+          }
+
+          .notice {
+            text-align: center;
+            font-weight: 600;
+            color: $color_dark;
+            margin-top: 20%;
+            width: 100%;
+            height: 80px;
+
+          }
+
+          .bottomForm {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 50%;
+            height: auto;
+            bottom: 0;
+            margin-top: 20%;
+
+            button {
+              cursor: pointer;
+              border: none;
+              background: $primary_one;
+              color: #ffffff;
+              border-radius: 20px;
+              height: 35px;
+              width: auto;
+              outline: none;
+              font-weight: 900;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+//hambugger menu
+
+@media (min-width: 320px) and (max-width: 480px) {
+.askALawyer{
+  width: 100%;
+  height: auto;
+  background-color: #dddddd;
+  padding-bottom: 20px;
+
+.askALawyerBanner{
+  width: 100%;
+  height: 250px;
+  background: $primary_accent;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: $primary_four;
+  font-weight: 700;
+  font-size: 2rem;
+  animation: fadeIn 1s ease-in-out;
+  .txt{
+    animation: slideIn 2s ease-in-out;
+}
+
+}
+
+.askALawyerWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  .text {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: 700;
+  }
+
+  .smalltxt {
+    width: auto;
+  }
+  .askALawyerIllustration{
+    background-color: white;
+    margin-top: 4%;
+    width: 80%;
+    max-height: 400px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .imageWrap{
+      overflow: hidden;
+      animation: slideThru 1s ease-in-out;
+      width: 250px;
+      height: 280px;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      img{
+        max-width: 250px;
+      }
+    }
+  }
+  .askALawyerForm {
+    margin-top: 4%;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      width: 95%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      .inputWrap {
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-direction: column;
+
+
+        .errors {
+          margin-top: 3%;
+          color: #5E0B37;
+          font-weight: 500;
+          font-size: .9rem;
+          height: 30px;
+          padding: 10px;
+          width: 100%;
+
+          transition: 0.9s ease-in;
+        }
+
+        label {
+          font-size: .9rem;
+          font-weight: 600;
+          height: 55px;
+          color: $color_dark;
+        }
+
+        .inputCont {
+
+          width: 100%;
+          height: 20px;
+          padding: 15px;
+          border-radius: 25px;
+          display: flex;
+          align-content: space-evenly;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+          justify-items: center;
+          border: 1px solid #cccccc;
+
+          input, select {
+            outline: none;
+            border: none;
+            width: 90%;
+            height: 20px;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+            transition: 0.8s ease-in-out;
+
+            &:focus, &:active {
+              background: none;
+              outline: none;
+            }
+          }
+        }
+
+        .textCont {
+          border: 1px solid #cccccc;
+          width: 100%;
+          height: 100px;
+          padding: 15px;
+          border-radius: 25px;
+          display: flex;
+          align-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          justify-items: center;
+
+
+          textarea {
+            background-color: #5E0B37;
+            outline: none;
+            border: none;
+            width: 100%;
+            height: 90px;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+
+            &:focus, &:active {
+              background: none;
+              outline: none;
+            }
+          }
+        }
+
+
+      }
+
+      .notice {
+        text-align: center;
+        font-weight: 600;
+        color: $color_dark;
+        margin-top: 20%;
+        width: 100%;
+        height: 80px;
+
+      }
+
+      .bottomForm {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 50%;
+        height: auto;
+        bottom: 0;
+        margin-top: 20%;
+
+        button {
+          cursor: pointer;
+          border: none;
+          background: $primary_one;
+          color: #ffffff;
+          border-radius: 20px;
+          height: 35px;
+          width: auto;
+          outline: none;
+          font-weight: 900;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+.payBtn{
+  background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em
+}
+
+
+
+
+
+@keyframes slideIn {
+from{
+opacity: 0;
+transform: translateY(-20px);
+}
+to{
+opacity: 1;
+transform: translateY(0px);
+}
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}

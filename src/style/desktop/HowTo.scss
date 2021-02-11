@@ -1,0 +1,733 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+$primary_one: #0B5E3F;
+$primary_two: #55DD4E;
+$primary_accent: #04130c;
+$primary_accentTwo: #0a3424;
+$color_dark: #323232;
+$primary_four: #f7ad13;
+$color_wine: #5E0B37;
+
+
+.howTo {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  animation: fadeIn 0.8s ease-in;
+
+  .bannerHowTo {
+    width: 100%;
+    height: 200px;
+    background-color: $primary_accentTwo;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      width: auto;
+      color: $primary_four;
+      font-weight: 700;
+      font-size: 2.1rem;
+      text-align: center;
+
+    }
+  }
+
+  //how to create a review
+  .howToCreateReview {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    .title {
+      padding: 15px;
+      height: 100px;
+      width: auto;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: left;
+
+    }
+
+    .timelineWrap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      .timeline {
+        border-left: 1px solid #5E0B37;
+        height: auto;
+        width: 80%;
+
+        .stepNum {
+          text-align: center;
+          padding: 15px;
+          width: 70%;
+          height: 40px;
+          border-right: 2px dotted #5E0B37;
+          font-size: 1.5rem;
+          color: #5E0B37;
+          font-weight: 700;
+        }
+
+        .box {
+          background-color: #ffffff;
+          border-left: 1px solid #5E0B37;
+          padding: 10px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+          margin: 5%;
+          border-radius: 20px;
+          width: 650px;
+          height: 200px;
+          transition: 0.6s ease-in-out;
+flex-direction: column;
+          &:hover {
+
+            transform: translateX(20px);
+          }
+
+          .image {
+            height: 100px;
+            width: 100%;
+display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            img {
+              object-fit: cover;
+              max-width: 130px;
+
+            }
+          }
+
+          .content {
+            width: 100%;
+            text-align: center;
+            height: auto;
+          }
+        }
+
+      }
+    }
+
+  }
+
+
+  //how to write a review
+
+  .leaveAReview {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    animation: 0.6s popup ease-in;
+
+    .title {
+      padding: 15px;
+      height: 100px;
+      width: auto;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: left;
+
+    }
+
+    .timelineWrap {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      .timeline {
+        border-left: 1px solid #5E0B37;
+        height: auto;
+        width: 80%;
+
+        .stepNum {
+          text-align: center;
+          padding: 15px;
+          width: 70%;
+          height: 40px;
+          border-right: 2px dotted #5E0B37;
+          font-size: 1.5rem;
+          color: #5E0B37;
+          font-weight: 700;
+        }
+
+        .box {
+          background-color: white;
+          border-left: 1px solid #5E0B37;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          align-content: center;
+          box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+          margin: 5%;
+          border-radius: 20px;
+          width: 670px;
+          height: 200px;
+          transition: 0.6s ease-in-out;
+          flex-direction: column;
+
+          &:hover {
+
+            transform: translateX(20px);
+          }
+
+          .image {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+
+            img {
+              object-fit: cover;
+              max-height: 100px;
+
+            }
+          }
+
+          .content {
+            text-align: center;
+            font-weight: 500;
+            width: 100%;
+            height: auto;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+  .howTo {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    animation: fadeIn 0.8s ease-in;
+
+    .bannerHowTo {
+      width: 100%;
+      height: 200px;
+      background-color: $primary_accentTwo;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        width: auto;
+        color: $primary_four;
+        font-weight: 700;
+        font-size: 1.7rem;
+        text-align: center;
+
+      }
+    }
+
+    //how to create a review
+    .howToCreateReview {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      flex-direction: column;
+
+      .title {
+        padding: 15px;
+        height: 100px;
+        width: auto;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+
+      }
+
+      .timelineWrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        .timeline {
+          border: none;
+          height: auto;
+          width: 80%;
+
+          .stepNum {
+
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            height: 40px;
+            border-right: 2px dotted #5E0B37;
+            font-size: 1.5rem;
+            color: #5E0B37;
+            font-weight: 700;
+          }
+
+          .box {
+            background-color: #ffffff;
+            border-left: 1px solid #5E0B37;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+            margin: 5%;
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+            transition: 0.6s ease-in-out;
+
+            &:hover {
+
+              transform: translateX(20px);
+            }
+
+            .image {
+              height: 100px;
+              width: 100%;
+
+              img {
+                object-fit: cover;
+                max-width: 170px;
+              }
+            }
+
+            .content {
+              width: 70%;
+              height: auto;
+            }
+          }
+
+        }
+      }
+
+    }
+
+
+    //how to write a review
+
+    .leaveAReview {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      flex-direction: column;
+      animation: 0.6s popup ease-in;
+
+      .title {
+        padding: 15px;
+        height: 100px;
+        width: auto;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+
+      }
+
+      .timelineWrap {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        .timeline {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          padding: 0;
+          border: none;
+          height: auto;
+          width: 80%;
+
+          .stepNum {
+            text-align: center;
+            padding: 15px;
+            width: 70%;
+            height: 40px;
+            border-right: 2px dotted #5E0B37;
+            font-size: 1.5rem;
+            color: #5E0B37;
+            font-weight: 700;
+          }
+
+          .box {
+            background-color: white;
+            border-left: 1px solid #5E0B37;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+            margin: 5%;
+            border-radius: 20px;
+            width: 250px;
+            height: auto;
+            flex-direction: column;
+            transition: 0.6s ease-in-out;
+
+            &:hover {
+
+              transform: translateX(20px);
+            }
+
+            .image {
+              height: 160px;
+              width: 160px;
+
+              img {
+                object-fit: cover;
+                max-width: 160px;
+              }
+            }
+
+            .content {
+              font-weight: 500;
+              width: 70%;
+              height: auto;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+  .howTo {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    animation: fadeIn 0.8s ease-in;
+
+    .bannerHowTo {
+      width: 100%;
+      height: 200px;
+      background-color: $primary_accentTwo;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        width: auto;
+        color: $primary_four;
+        font-weight: 700;
+        font-size: 1.7rem;
+        text-align: center;
+
+      }
+    }
+
+    //how to create a review
+    .howToCreateReview {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      flex-direction: column;
+
+      .title {
+        padding: 15px;
+        height: 100px;
+        width: auto;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+
+      }
+
+      .timelineWrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        .timeline {
+          border: none;
+          height: auto;
+          width: 80%;
+
+          .stepNum {
+
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            height: 40px;
+            border-right: 2px dotted #5E0B37;
+            font-size: 1.5rem;
+            color: #5E0B37;
+            font-weight: 700;
+          }
+
+          .box {
+            background-color: #ffffff;
+            border-left: 1px solid #5E0B37;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+            margin: 5%;
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+            transition: 0.6s ease-in-out;
+
+            &:hover {
+
+              transform: translateX(20px);
+            }
+
+            .image {
+              height: 140px;
+              width: 100%;
+
+              img {
+                object-fit: cover;
+                max-width: 150px;
+
+              }
+            }
+
+            .content {
+              width: 70%;
+              height: auto;
+            }
+          }
+
+        }
+      }
+
+    }
+
+
+    //how to write a review
+
+    .leaveAReview {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      flex-direction: column;
+      animation: 0.6s popup ease-in;
+
+      .title {
+        padding: 15px;
+        height: 100px;
+        width: auto;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+
+      }
+
+      .timelineWrap {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        .timeline {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          padding: 0;
+          border: none;
+          height: auto;
+          width: 80%;
+
+          .stepNum {
+            text-align: center;
+            padding: 15px;
+            width: 70%;
+            height: 40px;
+            border-right: 2px dotted #5E0B37;
+            font-size: 1.5rem;
+            color: #5E0B37;
+            font-weight: 700;
+          }
+
+          .box {
+            background-color: white;
+            border-left: 1px solid #5E0B37;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+            margin: 5%;
+            border-radius: 20px;
+            width: 250px;
+            height: auto;
+            flex-direction: column;
+            transition: 0.6s ease-in-out;
+
+            &:hover {
+
+              transform: translateX(20px);
+            }
+
+            .image {
+              height: 100px;
+              width: 100%;
+
+              img {
+                object-fit: cover;
+
+                max-width: 200px;
+
+              }
+            }
+
+            .content {
+              font-weight: 500;
+              width: 70%;
+              height: auto;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+@keyframes popup {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: scale(1.1) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}

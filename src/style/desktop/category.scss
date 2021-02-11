@@ -1,0 +1,480 @@
+$primary_one: #0B5E3F;
+$primary_two: #55DD4E;
+$primary_accent: #051A12;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$color_wine: #5E0B37;
+
+.allBusiness{
+  width :100%;
+  height: auto;
+background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .banner{
+    width: 100%;
+    height: 350px;
+    background-color: $primary_accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation: fadeIn 1s ease-in;
+    .text{
+      animation: slide 2s ease-in;
+      width: auto;
+      text-align: center;
+      padding: 15px;
+      font-weight: 700;
+      font-size: 5rem;
+      color: $primary_four;
+    }
+    .searchWrap{
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: row;
+      form{
+.smallTxt{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #a3a3a3;
+  padding: 10px;
+}
+        .inputWrap{
+          display: flex;
+          align-content: center;
+          flex-direction: row;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          background: white;
+          border-radius: 35px;
+          height: 55px;
+          padding: 5px;
+          label {
+            line-height: 55px;
+            font-weight: 600;
+          }
+
+          input{
+            color: $color_dark;
+            font-weight: 600;
+            box-shadow: none;
+            background: none;
+            transition: 0.5s ease-in-out;
+            font-family: Roboto, sans-serif;
+            &:focus {
+              background-color: #f6f6f6;
+            }
+            input::placeholder{
+              font-weight: 600;
+            }
+          }
+          #Location{
+            width: 150px;
+
+          }
+
+        }
+      }
+    }
+  }
+  .Businesses{
+    margin-top: 2%;
+    width: 95%;
+    height: auto;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+
+    .categoryTxt{
+      float: left;
+      width: 90%;
+      padding: 10px;
+      text-align: left;
+      height: 35px;
+    }
+    .bizCardWrap{
+width: 95%;
+      display: flex;
+      height: auto;
+
+      align-content: space-between;
+      justify-content: space-between;
+      align-items: center;
+      a{
+        text-decoration: none;
+        color: #111111;
+      }
+      .bizCard{
+        animation: fadeIn 0.5s ease-in-out;
+        border-radius: 25px;
+        width: 490px;
+        height: 180px;
+        cursor: pointer;
+        box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.18);
+        transition: 0.6s ease-in-out;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        display: flex;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+          box-shadow:none;
+          border: 1px solid #d5d5d5;
+        }
+        .bizLogo{
+width: 170px;
+          height:170px;
+          border-radius: 100%;
+
+          transition: 0.8s ease-in-out;
+          img{
+            width: 160px;
+            height:160px;
+            border-radius: 100%;
+            transition: 0.8s ease-in-out;
+            object-fit: cover;
+          }
+        }
+        .otherDetails{
+          width: 280px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .name{
+        min-height: 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+          .location{
+            width: 100%;
+            min-height: 40px;
+            text-transform: capitalize;
+          }
+          .followBtn{
+            width: 90px;
+            height: 35px;
+            background-color: $primary_two;
+            color: white;
+            font-weight: 500;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+//for mobile
+
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .allBusiness{
+    width :100%;
+    height: auto;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .banner{
+      width: 100%;
+      height: 300px;
+      background-color: $primary_accent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      flex-direction: column;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      animation: fadeIn 1s ease-in;
+      .text{
+        animation: slide 2s ease-in;
+        width: auto;
+        text-align: center;
+        padding: 15px;
+        font-weight: 700;
+        font-size: 2rem;
+        color: $primary_four;
+      }
+
+        .searchWrap {
+          width: 90%;
+          height: auto;
+          display: flex;
+          justify-items: center;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          flex-direction: row;
+          z-index: 1;
+
+
+        form{
+        width: 97%;
+          .smallTxt{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            color: #a3a3a3;
+            padding: 10px;
+          }
+          .inputWrap{
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background: white;
+            border-radius: 35px;
+            height: 45px;
+            padding: 5px;
+            label {
+              line-height: 55px;
+              font-weight: 600;
+            }
+
+            input{
+              color: $color_dark;
+              font-weight: 600;
+              box-shadow: none;
+              background: none;
+              width: 90px;
+              transition: 0.5s ease-in-out;
+              font-family: Roboto, sans-serif;
+          text-align: right;
+              &:focus {
+                background-color: #f6f6f6;
+              }
+              input::placeholder{
+                font-weight: 600;
+              }
+            }
+            #Location{
+              min-width: 90px;
+
+            }
+
+          }
+        }
+      }
+    }
+    .Businesses{
+      margin-top: 2%;
+      width: 90%;
+      height: auto;
+      background-color: #F5F5F5;
+      border-radius: 40px;
+      box-shadow:none;
+      display: flex;
+      padding: 0;
+      align-content: center;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      justify-items: center;
+
+
+      .categoryTxt{
+        float: left;
+        width: 90%;
+        padding: 10px;
+        text-align: left;
+        height: 35px;
+      }
+      .bizCardWrap{
+        width: 100%;
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        .bizCard{
+
+          animation: fadeIn 0.5s ease-in-out;
+          border-radius: 25px;
+          max-width: 340px;
+          margin-top: 6%;
+          height: 150px;
+          cursor: pointer;
+          box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.18);
+          transition: 0.6s ease-in-out;
+          border: 1px solid #ffffff;
+          padding: 10px;
+          display: flex;
+          align-content: space-between;
+          align-items: center;
+          justify-content: center;
+          &:hover{
+            box-shadow:none;
+            border: 1px solid #d5d5d5;
+          }
+          .bizLogo{
+            width: 170px;
+            height:170px;
+            border-radius: 100%;
+display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            transition: 0.8s ease-in-out;
+            img{
+              width: 90px;
+              height:90px;
+              border-radius: 100%;
+              transition: 0.8s ease-in-out;
+              object-fit: cover;
+            }
+          }
+          .otherDetails{
+            width: 280px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .name{
+              min-height: 40px;
+              font-size: 1rem;
+              font-weight: 700;
+            }
+            .location{
+              width: 100%;
+              min-height: 40px;
+              text-transform: capitalize;
+            }
+            .followBtn{
+              width: 90px;
+              height: 35px;
+              background-color: $primary_two;
+              color: white;
+              font-weight: 500;
+              border: none;
+              border-radius: 20px;
+              cursor: pointer;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideThru {
+  from{
+    transform: translateX(-150px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}

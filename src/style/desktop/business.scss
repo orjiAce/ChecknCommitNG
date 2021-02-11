@@ -1,0 +1,856 @@
+
+$primary_one: #0B5E3F;
+$primary_two: #55DD4E;
+$primary_accent: #051A12;
+$color_dark: #323232;
+$primary_four: #F6AE5B;
+$color_wine: #5E0B37;
+$primary_wine: #c63232;
+
+.businessPage{
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+}
+
+.businessBanner{
+   width: 100%;
+   height: 250px;
+   background-color: $primary_accent;
+   color: white;
+   .title{
+     color: $primary_four;
+     animation: slide 0.9s ease forwards;
+   }
+   .subs{
+     padding: 15px;
+     font-weight: 600;
+     font-size: 1.2rem;
+     animation: slide 1.5s ease forwards;
+   }
+
+ }
+
+
+
+
+.wrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-content: space-between;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: start;
+  flex-flow: wrap;
+  margin-top: 2%;
+  .staticProfileCont{
+    width: 38%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+padding: 10px;
+    .sub{text-align: center;
+      width: 70%;
+      font-weight: 600;
+      color: $color_dark;
+      text-transform: capitalize;
+      padding: 15px;
+      font-size: 2rem;
+    }
+    .bizMiniProfile{
+      width: auto;
+      height: auto;
+      .titleTxt{
+        padding: 15px;
+        font-size: 2rem;
+      }
+      .staticProfileWrap{
+
+        width: 95%;
+        height: auto;
+        padding: 15px;
+        background-color: $primary_accent;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        border-radius: 60px;
+
+        .writeReview{
+          box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+          border: none;
+          width: auto;
+          padding: 12px;
+          min-height: 35px;
+          border-radius: 20px;
+          background-color: $primary_two;
+          color: white;
+          font-weight: 800;
+          font-family: "Poppins bold", sans-serif;
+          outline: none;
+          cursor: pointer;
+          transition: 0.8s ease;
+          text-transform: capitalize;
+          &:hover{
+            background-color: white;
+            color: $color_dark;
+          }
+        }
+
+
+        .notice{
+          width: 100%;
+          height: auto;
+          font-weight: 500;
+          color: #dbdbdb;
+          font-size: 0.8rem;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .staticProfile{
+          animation: fadeIn 0.9s ease;
+          width: 95%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          align-content: space-between;
+          justify-content: center;
+          padding: 15px;
+          .topLayer{
+            width: 100%;
+            height: 140px;
+            display: flex;
+            align-content: space-between;
+            justify-items: left;
+            justify-content: space-between;
+            align-items: flex-start;
+            .bizLogo{
+              width: 120px;
+              height: 120px;
+              background-color: white;
+              border-radius: 100%;
+              img{
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                object-fit: cover;
+              }
+            }
+            .details{
+              text-align: left;
+              color: white;
+              padding: 12px;
+              font-weight: 500;
+              width: 70%;
+              .phoneNumber{
+                a {
+                  color: $primary_four;
+                }
+              }
+              .icon{
+                color: $primary_two;
+              }
+            }
+          }
+
+          .bio{
+            width: 100%;
+            height: auto;
+            color: #eeeeee;
+            font-weight: 500;
+          }
+
+
+          .btnWrap{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            flex-direction: column;
+
+          }
+          .middleLayer{
+            flex-wrap: wrap;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-content: space-between;
+            justify-content: space-between;
+            align-items: flex-start;
+            color: #ffffff;
+            .brand{
+              display: flex;
+              flex-direction: column;
+              .brandName{
+                font-size: 1.8rem ;
+                font-weight: 700;
+                text-transform: capitalize;
+              }
+              div small{
+                color: #cecece;
+              }
+            }
+
+            .followBtn{
+              width: 90px;
+              height: 35px;
+              background-color: $primary_two;
+              color: white;
+              font-weight: 500;
+              border: none;
+              border-radius: 20px;
+              cursor: pointer;
+              line-height: 40px;
+              outline: none;
+            }
+            .unFollowBtn{
+              outline: none;
+              width: 90px;
+              height: 35px;
+              background-color: #ffffff;
+              color: $color_dark;
+              font-weight: 700;
+              border: none;
+              border-radius: 20px;
+              cursor: pointer;
+              line-height: 40px;
+            }
+          }
+
+
+
+        }
+      }
+
+
+    }
+    .gallery{
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+     flex-wrap: wrap;
+      align-content: space-between;
+      margin: 2%;
+      width: 90%;
+      height:auto;
+.image{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  img{
+    border-radius: 15px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+}
+    }
+  }
+  .reviewWrap{
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    .reviewCount{
+      padding: 10px;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $color_dark;
+    }
+    .reviewCont{
+      width: 95%;
+      height: auto;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+      flex-wrap: wrap;
+      a{
+        text-decoration: none;
+        color: $color_dark;
+      }
+      .myCard {
+        border: 0.6px solid #cccccc;
+        background: white;
+        margin: 1.3%;
+        width: 400px;
+        height: 230px;
+        border-radius: 27px;
+
+        transition: 0.6s ease-in-out;
+        transform-origin: bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+         // transform: translateY(-20px);
+        }
+
+        .topLayer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+          width: auto;
+          max-height:40px;
+          padding: 8px;
+
+          .userImg {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            // background-color: #5E0B37;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 100%;
+              position: relative;
+            }
+          }
+
+          .sideBox {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            .userName {
+              line-height: 10px;
+              width: 100%;
+              height: 15px;
+              flex-direction: row;
+              justify-content: space-between;
+              align-content: space-between;
+              display: flex;
+
+              .name {
+                font-weight: 700;
+                font-size: .8rem;
+
+                span {
+                  font-weight: 400;
+                  color: #323232;
+                }
+
+                a {
+                  text-decoration: none;
+                  color: $color_dark;
+                }
+              }
+
+              .time {
+                color: #969696;
+                margin-right: 10%;
+                font-weight: 500;
+                font-size: .6rem;
+              }
+
+
+            }
+
+            .rating {
+              color: $primary_four;
+              width: 100%;
+              height: 20px;
+
+            }
+          }
+        }
+
+        .middleLayer {
+          font-weight: 500;
+          font-size: .8rem;
+          text-wrap: normal;
+          word-wrap: normal;
+          width: auto;
+          padding: 10px;
+          height: 270px;
+
+          .reviewTitle{
+            font-size: 1rem;
+            font-weight: 700;
+          }
+          .body{
+
+          }
+        }
+
+
+        .bottomLayer {
+          padding: 10px;
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-content: center;
+          justify-content: space-evenly;
+          align-items: center;
+          img{
+            border-radius: 10px;
+            object-fit: cover;
+            background-color: #323232;
+            width: 70px;
+            height: 40px;
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+.modal{
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.73);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  justify-content: start;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  .postReviewForm{
+    z-index: 1000;
+    animation: fadeIn 0.8s ease-in-out;
+    border: 1px solid $color_wine;
+    margin-top: 1%;
+    width: 470px;
+    height: 80%;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: start;
+    align-items: center;
+    justify-items: center;
+.title{
+  font-size: 1.4rem;
+  height: 25px;
+}
+    form{
+      animation: 0.8s fadein ease 1s;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+font-weight: 500;
+
+      .postReviewBtn{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        .reviewBtn{
+          outline: none;
+          padding: 10px;
+          border: none;
+          height: 35px;
+          width: auto;
+          border-radius: 30px;
+          color: white;
+          background-color: $primary_one;
+          cursor: pointer;
+          font-weight: 600;
+          text-transform: capitalize;
+          box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+        }
+        outline: none;
+        .cancelBtn{
+          padding: 10px;
+          border: none;
+          height: 35px;
+          width: auto;
+          border-radius: 30px;
+          color: $color_dark;
+          background-color:#eeeeee;
+          cursor: pointer;
+          font-weight: 600;
+          text-transform: capitalize;
+          box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+        }
+      }
+
+.cameraText{
+  margin-top: 9%;
+text-align: center;
+    width: 80%;
+    height: auto;
+    font-size: 0.9rem;
+}
+      .warning{
+        text-align: center;
+        color: #111111;
+        font-size: 0.8rem;
+        width: 80%;
+        height: auto;
+      }
+      .fileInputWrap{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        justify-items: center;
+font-size: 0.9rem;
+      }
+      .starWrap{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 0.7rem;
+      }
+      .inputWrap {
+        width: auto;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-direction: column;
+
+        label {
+          font-size: .9rem;
+          font-weight: 600;
+          height: 55px;
+          color: $color_dark;
+        }
+
+        .textAreaCont{
+          outline: none;
+          width: 340px;
+          height: 80px;
+          border: 1px solid #cdd;
+          padding: 15px;
+          border-radius: 25px;
+          display: flex;
+          align-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          justify-items: center;
+
+          .charCount {
+            line-height: 40px;
+            text-align: right;
+            width: 100%;
+            height: 20px;
+            font-size: 0.7rem;
+            transition: 0.8s ease-in-out;
+            animation: fadeIn 0.8s ease-in-out;
+
+            p {
+              color: #0A5C3E;
+              transition: 0.8s ease-in-out;
+              animation: fadeIn 0.8s ease-in-out;
+            }
+          }
+          textarea{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            width: 98%;
+            height: 80px;
+            outline: none;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+            transition: 0.5s ease-in-out;
+          resize: none;
+            border: none;
+          }
+        }
+        .inputCont {
+          outline: none;
+          width: 340px;
+          height: 20px;
+          border: 1px solid #cdd;
+          padding: 15px;
+          border-radius: 25px;
+          display: flex;
+          align-content: space-evenly;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
+          justify-items: center;
+
+
+          input{
+            outline: none;
+            border: none;
+            width: 90%;
+            height: 20px;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+            transition: 0.5s ease-in-out;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            &:focus{
+              background: none;
+              outline: none;
+
+            }
+          }
+        }
+
+
+      }
+    }
+
+  }
+}
+
+.profileSkel{
+  .staticProfile {
+overflow: hidden;
+    width: 95%;
+    height: 450px;
+    background-color: #b4b4b4;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 10px;
+
+    .topLayer {
+      animation: fadeIn 0.9s ease infinite alternate;
+      width: 100%;
+      height: 140px;
+      display: flex;
+      align-content: space-between;
+      justify-items: left;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .bizLogo {
+        animation: fadeIn 0.9s ease forwards infinite alternate;
+        transform-origin: left;
+        width: 120px;
+        height: 120px;
+        background-color: #dddddd;
+        border-radius: 100%;
+
+
+      }
+
+      .details {
+        animation: fadeIn 0.9s ease forwards infinite alternate;
+        transform-origin: left;
+       background-color: #dddddd;
+        padding: 12px;
+        width: 70%;
+        border-radius: 40px;
+        .phoneNumber{
+          a {
+            color: $primary_four;
+          }
+        }
+      }
+    }
+
+    .bio {
+      animation: fadeIn 0.9s ease forwards infinite alternate;
+      transform-origin: left;
+      width: 100%;
+      height: auto;
+    background-color: #c4c4c4;
+      border-radius: 40px;
+      margin-top: 1%;
+    }
+
+    .middleLayer {
+      height: 100px;
+      width: 100%;
+      border-radius: 40px;
+      animation: fadeIn 0.9s ease infinite alternate;
+      transform-origin: left;
+      background-color: #dddddd;
+      .brand {
+        border-radius: 40px;
+        animation: fadeIn 0.9s ease forwards infinite alternate;
+        transform-origin: left;
+        display: flex;
+     background-color: #dddddd;
+        width: 50%;
+        height: 35px;
+
+      }
+    }
+
+
+  }
+}
+
+
+
+
+
+
+
+.bizCardSkel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  .mySkelCard {
+    animation: fadeIn 0.8s ease;
+    width: 420px;
+    height: 230px;
+    border-radius: 27px;
+    box-shadow: 0 11px 27px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.6s ease-in-out;
+    transform-origin: bottom;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .topLayer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: auto;
+      height: 40px;
+      padding: 8px;
+
+      border-radius: 40px;
+
+      .sideBox {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .username {
+          width: 100%;
+          height: 15px;
+          border-radius: 100%;
+          background-color: #c0c0c0;
+          animation: fadeIn 0.8s ease alternate infinite;
+        }
+      }
+
+      .userImg {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: #c0c0c0;
+        animation: fadeIn 0.8s ease alternate infinite;
+      }
+
+
+    }
+
+    .middleLayer {
+      font-weight: 500;
+      font-size: .8rem;
+      text-wrap: normal;
+      word-wrap: normal;
+      width: auto;
+      padding: 10px;
+      height: 270px;
+
+      .reviewTitle {
+        height: 30px;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+        background-color: #dddddd;
+        animation: fadeIn 0.8s ease alternate infinite;
+        border-radius: 40px;
+      }
+
+      .body {
+        width: 100%;
+        height: 100px;
+        background-color: #c0c0c0;
+        animation: fadeIn 0.8s ease alternate infinite;
+        border-radius: 25px;
+      }
+    }
+
+
+    .bottomLayer {
+
+
+
+
+    }
+  }
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

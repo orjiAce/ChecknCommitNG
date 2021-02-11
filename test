@@ -1,0 +1,51 @@
+      handleChange = (event) => {
+            // var input = event.target.value;
+            this.setState({
+                [event.target.name]: event.target.value,
+                //chars_left: max_chars - input.length
+            });
+
+
+        };
+
+        fileChangedHandler = event => {
+            this.setState({ selectedFiles: event.target.files[0] });
+            console.log(this.state.selectedFiles);
+            console.log(Array.from(event.target.files))
+        };
+
+        fileChangedHandlerTwo = event => {
+            this.setState({ selectedFileTwo: event.target.files[0] });
+            console.log(this.state.selectedFileTwo);
+            console.log(Array.from(event.target.files))
+        };
+        fileChangedHandlerThree = event => {
+            this.setState({ selectedFileThree: event.target.files[0] });
+            console.log(this.state.selectedFileThree);
+            console.log(Array.from(event.target.files))
+        };
+
+
+
+       handleSubmit = (event) => {
+           event.preventDefault();
+ const recipeData = new FormData();
+        if(this.state.selectedFiles !== null){
+            recipeData.append(
+                'image', this.state.selectedFiles, this.state.selectedFiles.name
+            );
+        }
+        if(this.state.selectedFileTwo !== null){
+
+            recipeData.append('file',  this.state.selectedFileTwo,this.state.selectedFileTwo.name);
+        }
+        if(this.state.selectedFileThree !== null){
+            recipeData.append('proof',  this.state.selectedFileThree,this.state.selectedFileThree.name);
+        }
+        recipeData.append('recipe', this.state.recipe);
+        recipeData.append('body', this.state.body);
+        recipeData.append('title', this.state.title);
+        recipeData.append('customerService', this.state.customerService);
+
+        this.props.createReview(recipeData);
+        }

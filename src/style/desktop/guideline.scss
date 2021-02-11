@@ -1,0 +1,140 @@
+$primary_one: #0B5E3F;
+$color_dark: #323232;
+$primary_four: #F9BB2D;
+$primary_wine: #c63232;
+$primary_two: #55DD4E;
+
+.guideline{
+  width: 100%;
+  height: auto;
+}
+.guidelineBanner{
+  height: 680px;
+  width: 100%;
+  .txt{
+    animation: fadeIn 1s ease;
+    right: 0;
+    float: right;
+    width: 50%;
+    height: auto;
+    position: absolute;
+   color:  $primary_four;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  svg{
+    width: 100%;
+.line{
+
+}
+    .man{
+      animation: shake 0.9s ease;
+    }
+  }
+}
+
+.guidelineCont{
+  width: 100%;
+  background: #ffffff;
+  height: auto;
+ .firstText{
+   padding: 10px;
+   height: auto;
+   width: auto;
+font-size: 1rem;
+   font-weight: 500;
+ }
+  .guidelineContTwo{
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 15px;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: wrap;
+
+    .leftCont{
+      width: 63%;
+      height:auto;
+
+
+      .box{
+        border-radius: 30px;
+        margin: 1.6%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        background: #ffffff;
+        padding: 8px;
+        height:auto;
+        width: 100%;
+        .contentTitle{
+          font-weight: 700;
+          font-size: 2rem;
+          color: $primary_one;
+          text-align: center;
+        }
+      .content{
+        padding: 15px;
+          width: auto;
+          height: auto;
+        font-weight: 500;
+      ul{
+        margin: 2%;
+      }
+      }
+
+      }
+    }
+    .rightCont{
+      padding: 20px;
+      margin: 1.6%;
+      width: 400px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 70px rgba(0, 0, 0, 0.2);
+      menu ul {
+        width: 100%;
+        padding: 5px;
+
+        li {
+          transition: 0.5s ease;
+          float: left;
+          width: 100%;
+          padding: 5px;
+          margin: 5px;
+          font-weight: 600;
+          cursor: pointer;
+          text-transform: uppercase;
+          &:hover{
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@keyframes shake {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

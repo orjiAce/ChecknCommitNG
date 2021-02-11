@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0fcc83f-dba2-4ffd-902c-319a6bca3d5d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V9U4oVrxpeiSk2IwwBqAxUodo2" />
+  <component name="PropertiesComponent">
+    <property name="ToolWindowFavorites.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/projects/asiaBank" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\reactApp\classsed-react-firebase-client-master\classsed-react-firebase-client-master\src\images" />
+      <recent name="C:\reactApp\classsed-react-firebase-client-master\classsed-react-firebase-client-master\src\images\ai" />
+      <recent name="C:\reactApp\classsed-react-firebase-client-master\classsed-react-firebase-client-master\src\pages" />
+      <recent name="C:\reactApp\classsed-react-firebase-client-master\classsed-react-firebase-client-master\src\components" />
+      <recent name="C:\reactApp\classsed-react-firebase-client-master\classsed-react-firebase-client-master\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0fcc83f-dba2-4ffd-902c-319a6bca3d5d" name="Default Changelist" comment="" />
+      <created>1576664615974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576664615974</updated>
+      <workItem from="1576664617785" duration="7269000" />
+      <workItem from="1576671952665" duration="60412000" />
+      <workItem from="1576967223427" duration="37750000" />
+      <workItem from="1577057895538" duration="3959000" />
+      <workItem from="1577126527583" duration="26377000" />
+      <workItem from="1577189666107" duration="2736000" />
+      <workItem from="1577205630476" duration="23124000" />
+      <workItem from="1577272879619" duration="100867000" />
+      <workItem from="1577985568299" duration="1061000" />
+      <workItem from="1578211161606" duration="110007000" />
+      <workItem from="1578824461235" duration="46977000" />
+      <workItem from="1579139596210" duration="19047000" />
+      <workItem from="1579609472793" duration="2713000" />
+      <workItem from="1579675879273" duration="7000" />
+      <workItem from="1579675896047" duration="12000" />
+      <workItem from="1579700806276" duration="1011000" />
+      <workItem from="1579732924481" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
